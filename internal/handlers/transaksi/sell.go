@@ -8,7 +8,6 @@ import (
 )
 
 func JualCrypto() {
-	utils.ClearScreen()
 	fmt.Println("=== JUAL CRYPTO ===")
 	crypto.TampilkanDaftarCypto(true)
 

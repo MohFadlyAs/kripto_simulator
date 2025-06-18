@@ -1,14 +1,13 @@
 package search
 
 import (
-	"fmt"
 	"crypto-simulator/internal/handlers/crypto"
 	"crypto-simulator/internal/models"
 	"crypto-simulator/internal/utils"
+	"fmt"
 )
 
 func SequentialSearch() {
-	utils.ClearScreen()
 	fmt.Print("Masukkan nama crypto: ")
 	var nama string
 	fmt.Scanln(&nama)

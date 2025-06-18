@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+
 	"crypto-simulator/internal/handlers/crypto"
 	"crypto-simulator/internal/handlers/portfolio"
 	"crypto-simulator/internal/handlers/riwayat"
@@ -16,7 +17,6 @@ func main() {
 	crypto.InisialisasiData()
 
 	for {
-		utils.ClearScreen()
 		fmt.Println("=== APLIKASI SIMULASI CRYPTO ===")
 		fmt.Printf("Saldo: $%.2f\n\n", models.Saldo)
 		fmt.Println("1. Kelola Crypto")
@@ -33,18 +33,25 @@ func main() {
 
 		switch pilihan {
 		case 1:
+			fmt.Println()
 			crypto.KelolaCryptoMenu()
 		case 2:
+			fmt.Println()
 			transaksi.TransaksiMenu()
 		case 3:
+			fmt.Println()
 			portfolio.PortofolioMenu()
 		case 4:
+			fmt.Println()
 			riwayat.RiwayatMenu()
 		case 5:
+			fmt.Println()
 			search.CariMenu()
 		case 6:
+			fmt.Println()
 			sort.UrutkanMenu()
 		case 0:
+			fmt.Println()
 			fmt.Println("Terima kasih!")
 			return
 		default:

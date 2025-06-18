@@ -1,15 +1,14 @@
 package search
 
 import (
-	"fmt"
 	"crypto-simulator/internal/handlers/crypto"
 	"crypto-simulator/internal/handlers/sort"
 	"crypto-simulator/internal/models"
 	"crypto-simulator/internal/utils"
+	"fmt"
 )
 
 func BinarySearch() {
-	utils.ClearScreen()
 	sort.InsertionSortByName(true)
 
 	fmt.Print("Masukkan nama Crypto: ")

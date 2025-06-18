@@ -1,13 +1,12 @@
 package portfolio
 
 import (
-	"fmt"
 	"crypto-simulator/internal/models"
 	"crypto-simulator/internal/utils"
+	"fmt"
 )
 
 func PortofolioMenu() {
-	utils.ClearScreen()
 	fmt.Println("=== PORTOFOLIO CRYPTO ===")
 	fmt.Printf("Saldo Virtual: $%.2f\n\n", models.Saldo)
 
