@@ -1,14 +1,13 @@
 package transaksi
 
 import (
-	"fmt"
 	"crypto-simulator/internal/models"
 	"crypto-simulator/internal/utils"
+	"fmt"
 )
 
 func TransaksiMenu() {
 	for {
-		utils.ClearScreen()
 		fmt.Println("=== TRANSAKSI ===")
 		fmt.Printf("Saldo: $%.2f\n\n", models.Saldo)
 		fmt.Println("1. Beli")
@@ -21,10 +20,13 @@ func TransaksiMenu() {
 
 		switch pilihan {
 		case 1:
+			fmt.Println()
 			BeliCrypto()
 		case 2:
+			fmt.Println()
 			JualCrypto()
 		case 0:
+			fmt.Print("\n\n\n")
 			return
 		default:
 			fmt.Println("Input salah!")

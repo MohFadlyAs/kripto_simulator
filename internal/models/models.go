@@ -10,7 +10,7 @@ type Crypto struct {
 
 type Transaksi struct {
 	ID     int
-	Jenis  string // "beli" atau "jual"
+	Jenis  string
 	Nama   string
 	Jumlah float64
 	Harga  float64
@@ -23,5 +23,5 @@ var (
 	TransaksiList   [200]Transaksi
 	JumlahCrypto    int
 	JumlahTransaksi int
-	Saldo           float64 = 10000 // Saldo awal
+	Saldo           float64 = 10000
 )

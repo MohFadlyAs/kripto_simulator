@@ -1,13 +1,12 @@
 package crypto
 
 import (
-	"fmt"
 	"crypto-simulator/internal/models"
 	"crypto-simulator/internal/utils"
+	"fmt"
 )
 
 func hapusCryptoMenu() {
-	utils.ClearScreen()
 	TampilkanDaftarCypto(false)
 
 	if models.JumlahCrypto == 0 {

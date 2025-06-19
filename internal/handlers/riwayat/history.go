@@ -1,13 +1,12 @@
 package riwayat
 
 import (
-	"fmt"
 	"crypto-simulator/internal/models"
 	"crypto-simulator/internal/utils"
+	"fmt"
 )
 
 func RiwayatMenu() {
-	utils.ClearScreen()
 	fmt.Println("=== RIWAYAT TRANSAKSI ===")
 
 	if models.JumlahTransaksi == 0 {

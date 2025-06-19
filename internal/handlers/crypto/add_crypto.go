@@ -1,13 +1,12 @@
 package crypto
 
 import (
-	"fmt"
 	"crypto-simulator/internal/models"
 	"crypto-simulator/internal/utils"
+	"fmt"
 )
 
 func tambahCryptoMenu() {
-	utils.ClearScreen()
 	var nama, simbol string
 	var harga, kapitalisasi float64
 

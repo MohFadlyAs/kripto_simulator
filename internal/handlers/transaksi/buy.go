@@ -1,14 +1,13 @@
 package transaksi
 
 import (
-	"fmt"
 	"crypto-simulator/internal/handlers/crypto"
 	"crypto-simulator/internal/models"
 	"crypto-simulator/internal/utils"
+	"fmt"
 )
 
 func BeliCrypto() {
-	utils.ClearScreen()
 	fmt.Println("=== BELI CRYPTO ===")
 	crypto.TampilkanDaftarCypto(false)
 

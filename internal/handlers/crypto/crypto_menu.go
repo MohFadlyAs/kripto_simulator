@@ -1,13 +1,12 @@
 package crypto
 
 import (
-	"fmt"
 	"crypto-simulator/internal/utils"
+	"fmt"
 )
 
 func KelolaCryptoMenu() {
 	for {
-		utils.ClearScreen()
 		fmt.Println("=== KELOLA CRYPTO ===")
 		fmt.Println("1. Tambah Crypto")
 		fmt.Println("2. Edit Crypto")
@@ -21,15 +20,20 @@ func KelolaCryptoMenu() {
 
 		switch pilihan {
 		case 1:
+			fmt.Println()
 			tambahCryptoMenu()
 		case 2:
+			fmt.Println()
 			editCryptoMenu()
 		case 3:
+			fmt.Println()
 			hapusCryptoMenu()
 		case 4:
+			fmt.Println()
 			TampilkanDaftarCypto(false)
 			utils.TungguUser()
 		case 0:
+			fmt.Print("\n\n\n")
 			return
 		default:
 			fmt.Println("Input salah!")
